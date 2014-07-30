@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  objects: 1
+  number: 1
+  city_id: 1
+
+two:
+  objects: 1
+  number: 1
+  city_id: 1
