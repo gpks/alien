@@ -1,2 +1,18 @@
-<h1>Contacts#show</h1>
-<p>Find me in app/views/contacts/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa miasta:</strong>
+  <%= @contact.city_id %>
+</p>
+<p>
+  <strong>Liczba obiektów:</strong>
+  <%= @contact.objects %>
+</p>
+<p>
+  <strong>Liczba zarejestrowanych kontaktów:</strong>
+  <%= @contact.number %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

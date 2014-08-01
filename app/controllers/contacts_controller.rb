@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   def new
-    @city = Contact.new
+    @contact = Contact.new
   end
 
   def edit
@@ -18,7 +18,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @city = Contact.new(contact_params)
+    @contact = Contact.new(contact_params)
     if @contact.save 
       redirect_to @contact, notice: 'Contact was successfully created.'
     else
