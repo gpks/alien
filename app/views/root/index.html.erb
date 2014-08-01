@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Objects</th>
+      <th>Nuber of contacts</th>
+      
+      
+  
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cities.each do |ticket| %>
+      <tr>
+
+        <td><%= ticket.name %></td>
+
+        <td><%= @cont.where(city_id: ticket.id).sum(:objects) %></td>
+        <td><%= @cont.where(city_id: ticket.id).sum(:number) %></td>
+        
+        
+      
+      
+      
+        
+       
+ 
+      </tr>
+    <% end %>
+  </tbody>
+</table>

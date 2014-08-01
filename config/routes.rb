@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'root/index'
+
   resources :contacts
 
   resources :cities
