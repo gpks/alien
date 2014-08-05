@@ -2,8 +2,8 @@
   <thead>
     <tr>
       <th>City</th>
-      <th>Objects</th>
-      <th>Nuber of contacts</th>
+      <th>Liczba zarejestrowanych kontaktów</th>
+      <th>Liczba obiektów</th>
       
       
   
@@ -18,7 +18,7 @@
         <td><%= city.name %></td>
 
         <td><%= city.contacts.count %></td>
-        <td><%= city.contacts.sum(:number) %></td>
+        <td><%= city.contacts.sum(:objects) %></td>
         
         
       
