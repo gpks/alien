@@ -1,16 +1,13 @@
 class RootController < ApplicationController
   def index
     @cities = City.all
-    @cont = Contact.all
-
-    @cities.each do |name|
-      @city_obj = 0
-      @cont.each do |cont|
-        if name.id == cont.city_id
-          @city_obj += cont.objects
-        end
-      end
-    end
-
+#    @cont = Contact.all
+    
+    #wersja brzydsza
+    @cities.to_a.sort! { |x,y| y.contacts.count <=> x.contacts.count }
+    
+    #wersja ładniejsza
+    @cities = City.joins(:contacts).group(Contact.arel_table[:city_id]).
+         order(Contact.arel_table[:city_id].count).reverse
   end
 end
