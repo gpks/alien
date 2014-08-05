@@ -12,13 +12,13 @@
   </thead>
 
   <tbody>
-    <% @cities.each do |ticket| %>
+    <% @cities.each do |city| %>
       <tr>
 
-        <td><%= ticket.name %></td>
+        <td><%= city.name %></td>
 
-        <td><%= @cont.where(city_id: ticket.id).sum(:objects) %></td>
-        <td><%= @cont.where(city_id: ticket.id).sum(:number) %></td>
+        <td><%= city.contacts.count %></td>
+        <td><%= city.contacts.sum(:number) %></td>
         
         
       
