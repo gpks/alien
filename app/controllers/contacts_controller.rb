@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
 
   def create
 
-    @city = City.find_or_create_by(params[:city_id])
+    @city = City.find_or_create_by(name: (params[:contact][:city_id]))
     contact_params.delete(:city_id)
     @contact = Contact.new(contact_params)
     @contact.city_id = @city.id
