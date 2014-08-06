@@ -8,7 +8,7 @@ class RootController < ApplicationController
     
     #wersja ładniejsza
     @cities = City.joins(:contacts).group(Contact.arel_table[:city_id]).
-         order(Contact.arel_table[:city_id].count).reverse
+         order(Contact.arel_table[:city_id].count).reverse.paginate(:page =>10)
   end
 def new
   @city = City.new
@@ -16,11 +16,9 @@ end
 
 def create
 
-    @city = City.find_or_create_by(params[:name])
-   
-      @city.contacts.create(params[:objects])
-      redirect_to root, notice: 'City was successfully created.'
-    
+  @city = City.find_or_create_by(params[:name])
+  @city.contacts.create(params[:objects])
+  redirect_to root_index_path, notice: 'City was successfully created.'
 end
 # def create
 #     @contact = Contact.new(contact_params)

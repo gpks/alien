@@ -18,7 +18,12 @@ class ContactsController < ApplicationController
   end
 
   def create
+
+    @city = City.find_or_create_by(params[:city_id])
+    contact_params.delete(:city_id)
     @contact = Contact.new(contact_params)
+    @contact.city_id = @city.id
+
     if @contact.save 
       redirect_to @contact, notice: 'Contact was successfully created.'
     else
@@ -48,6 +53,11 @@ class ContactsController < ApplicationController
     def set_contact
       @contact = Contact.find(params[:id])
     end
+
+    # def city_params
+    #   params.require(:city).permit(:name)
+    # end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params

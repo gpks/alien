@@ -13,15 +13,15 @@
   </thead>
 
   <tbody>
-    <% @contacts.each do |ticket| %>
+    <% @contacts.each do |contact| %>
       <tr>
-        <td><%= ticket.city_id %></td>
-        <td><%= ticket.objects %></td>
-       <td><%= link_to 'Edit', edit_contact_path(ticket.id)%> <td><%= link_to 'show', ticket %> <td><%= button_to 'destroy', ticket, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
+        <td><%= contact.city_id %></td>
+        <td><%= contact.objects %></td>
+       <td><%= link_to 'Edit', edit_contact_path(contact.id)%> <td><%= link_to 'show', contact %> <td><%= button_to 'destroy', contact, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
  
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New user', new_contact_path %>
+<%= link_to 'New contact', new_contact_path %>

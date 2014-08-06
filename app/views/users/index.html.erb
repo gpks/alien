@@ -14,12 +14,12 @@
   </thead>
 
   <tbody>
-    <% @users.each do |ticket| %>
+    <% @users.each do |user| %>
       <tr>
-        <td><%= ticket.name %></td>
-        <td><%= ticket.email %></td>
-        <td><%= ticket.admin %></td>
-       <td><%= link_to 'Edit', edit_user_path(ticket.id)%> <td><%= link_to 'show', ticket %> <td><%= button_to 'destroy', ticket, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.admin %></td>
+       <td><%= link_to 'Edit', edit_user_path(user.id)%> <td><%= link_to 'show', user %> <td><%= button_to 'destroy', user, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
  
       </tr>
     <% end %>

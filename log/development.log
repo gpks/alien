@@ -6902,3 +6902,3786 @@ ActionController::RoutingError (No route matches [POST] "/root/new"):
   Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
   Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
   Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 245ms (Views: 182.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:35 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:35 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:35 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:35 +0200
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (58.7ms)
+  Rendered root/new.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 78ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (3.6ms)
+  Rendered root/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:39 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:40 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:40 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:40 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:36:40 +0200
+
+
+Started POST "/root/new" for 127.0.0.1 at 2014-08-06 21:36:46 +0200
+
+ActionController::RoutingError (No route matches [POST] "/root/new"):
+  actionpack (4.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.2) lib/rails/engine.rb:514:in `call'
+  railties (4.1.2) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.2ms)
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:40:38 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (2.7ms)
+  Rendered root/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+...ffer.append=( form_tag do ("/", method: "post") );@output_bu...
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+..._tag do ("/", method: "post") );@output_buffer.safe_append='
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+  app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+  app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/root/new.html.erb:1:in `_app_views_root_new_html_erb___3960364998492758548_29575840'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:42:04 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:05 +0200
+
+
+Started GET "/root/index" for 127.0.0.1 at 2014-08-06 21:42:08 +0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for RootController):
+  actionpack (4.1.2) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.2) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.2) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.2) lib/rails/engine.rb:514:in `call'
+  railties (4.1.2) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.0ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.8ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:42:09 +0200
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:42:13 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (1.3ms)
+  Rendered root/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+...ffer.append=( form_tag do ("/", method: "post") );@output_bu...
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+..._tag do ("/", method: "post") );@output_buffer.safe_append='
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+  app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+  app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/root/new.html.erb:1:in `_app_views_root_new_html_erb___3960364998492758548_29575840'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:42:14 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (1.3ms)
+  Rendered root/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+...ffer.append=( form_tag do ("/", method: "post") );@output_bu...
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+..._tag do ("/", method: "post") );@output_buffer.safe_append='
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+  app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+  app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/root/new.html.erb:1:in `_app_views_root_new_html_erb___3960364998492758548_29575840'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:42:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (1.1ms)
+  Rendered root/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 30ms
+
+SyntaxError (/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+....append=( form_tag do ("/root", method: "post") );@output_bu...
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+... do ("/root", method: "post") );@output_buffer.safe_append='
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+  app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+  app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/root/new.html.erb:1:in `_app_views_root_new_html_erb__2447970626865711781_31758540'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 21:45:39 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.1.2/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 134ms (Views: 132.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:45 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 53ms (Views: 42.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:50 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 21:45:53 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (71.2ms)
+  Rendered contacts/new.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 21:45:58 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"7", "objects"=>"5"}, "commit"=>"Create Contact"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)  [["city_id", 7], ["created_at", "2014-08-06 19:45:58.992193"], ["objects", 5], ["updated_at", "2014-08-06 19:45:58.992193"]]
+  [1m[36m (252.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/11
+Completed 302 Found in 279ms (ActiveRecord: 253.7ms)
+
+
+Started GET "/contacts/11" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mContact Load (0.6ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered contacts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:45:59 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:46:01 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/root/index" for 127.0.0.1 at 2014-08-06 21:46:06 +0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for RootController):
+  actionpack (4.1.2) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.2) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.2) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.2) lib/rails/engine.rb:514:in `call'
+  railties (4.1.2) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.5ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 88ms (Views: 73.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:13 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:46:29 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.6ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:47:49 +0200
+
+
+Started GET "/contacts/2" for 127.0.0.1 at 2014-08-06 21:47:52 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered contacts/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 47ms (Views: 25.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:50:41 +0200
+
+
+Started GET "/root/index" for 127.0.0.1 at 2014-08-06 21:50:44 +0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for RootController):
+  actionpack (4.1.2) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.2) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.2) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.2) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.2) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.2) lib/rails/engine.rb:514:in `call'
+  railties (4.1.2) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/gosia/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 21:50:49 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (1.6ms)
+  Rendered root/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+....append=( form_tag do ("/root", :method => :post) );@output_...
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+...o ("/root", :method => :post) );@output_buffer.safe_append='
+...                               ^
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gosia/Dropbox/cl/ufo/alien/app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/root/_form.html.erb:1: syntax error, unexpected ',', expecting ')'
+  app/views/root/_form.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+  app/views/root/_form.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/root/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/root/new.html.erb:1:in `_app_views_root_new_html_erb__2447970626865711781_31758540'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 21:58:57 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.7ms)
+  Rendered contacts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>""}, "commit"=>"Create Contact"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (4.7ms)
+  Rendered contacts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 83ms (Views: 74.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:02 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (4.5ms)
+  Rendered contacts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 27ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:06 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 21:59:09 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (3.8ms)
+  Rendered contacts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 67ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 21:59:10 +0200
+
+
+Started GET "/root/new" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+Processing by RootController#new as HTML
+  Rendered root/_form.html.erb (5.4ms)
+  Rendered root/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:06 +0200
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/_form.html.erb (2.6ms)
+  Rendered root/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+Processing by RootController#index as HTML
+  [1m[36mCity Load (0.8ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  Rendered root/_form.html.erb (1.8ms)
+  Rendered root/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 72ms (Views: 66.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:08:09 +0200
+
+
+Started POST "/root" for 127.0.0.1 at 2014-08-06 22:08:18 +0200
+Processing by RootController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "city"=>{"name"=>"Sopot"}, "contact"=>{"objects"=>"1"}, "commit"=>"stwórz"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 15ms
+
+NameError (undefined local variable or method `root' for #<RootController:0x00000004c4d408>):
+  app/controllers/root_controller.rb:21:in `create'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/_form.html.erb (67.7ms)
+  Rendered root/index.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 256ms (Views: 215.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:39 +0200
+
+
+Started POST "/root" for 127.0.0.1 at 2014-08-06 22:10:46 +0200
+Processing by RootController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "city"=>{"name"=>"Sopot"}, "contact"=>{"objects"=>"1"}, "commit"=>"stwórz"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/root
+Completed 302 Found in 28ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:10:46 +0200
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/_form.html.erb (2.1ms)
+  Rendered root/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:47 +0200
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+Processing by RootController#index as HTML
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  Rendered root/_form.html.erb (54.3ms)
+  Rendered root/index.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 85ms (Views: 78.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:10:55 +0200
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" = 'Siedlce' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)[0m  [["city_id", 7], ["created_at", "2014-08-06 20:12:34.029326"], ["objects", 8], ["updated_at", "2014-08-06 20:12:34.029326"]]
+  [1m[35m (211.2ms)[0m  commit transaction
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  Rendered root/_form.html.erb (54.5ms)
+  Rendered root/index.html.erb within layouts/application (83.2ms)
+Completed 200 OK in 220ms (Views: 180.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:52 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:12:53 +0200
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" = 'Siedlce' LIMIT 1[0m
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 31.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:14 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:19:18 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (7.8ms)
+  Rendered contacts/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Warszawa", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Exists (0.3ms)[0m  SELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (4.1ms)
+  Rendered contacts/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 86ms (Views: 55.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:19:24 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 73ms (Views: 66.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:29 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:21:32 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.5ms)
+  Rendered contacts/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (2.8ms)
+  Rendered contacts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 85ms (Views: 55.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:21:36 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"1", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (4.7ms)
+  Rendered contacts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:23:41 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.6ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (3.4ms)
+  Rendered contacts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 16.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:32:33 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:35:50 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:35:52 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (5.5ms)
+  Rendered contacts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:35:56 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Exists (0.3ms)[0m  SELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 26ms
+
+NameError (undefined local variable or method `city_id' for #<ContactsController:0x000000044eaa80>):
+  app/controllers/contacts_controller.rb:23:in `create'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:29 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:36:30 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (3.2ms)
+  Rendered contacts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:36:34 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (3.6ms)
+  Rendered contacts/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 50ms (Views: 14.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:34 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:36:35 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.6ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (2.9ms)
+  Rendered contacts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 20.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:20 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:37:21 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:39:24 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:39:25 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:39:26 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.5ms)
+  Rendered contacts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 85ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:39:32 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (1.0ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL  ORDER BY "cities"."id" DESC LIMIT 1
+Completed 500 Internal Server Error in 50ms
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/contacts_controller.rb:25:in `create'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 75ms (Views: 70.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:29 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:45:32 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.4ms)
+  Rendered contacts/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (5.3ms)
+  Rendered contacts/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 87ms (Views: 69.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:45:37 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:46:49 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:46:51 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (2.9ms)
+  Rendered contacts/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_for(@contact) do |f| %>
+    2:  <% if @note.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
+    5: 
+  app/views/contacts/_form.html.erb:2:in `block in _app_views_contacts__form_html_erb__3302442664817515785_36905160'
+  app/views/contacts/_form.html.erb:1:in `_app_views_contacts__form_html_erb__3302442664817515785_36905160'
+  app/views/contacts/new.html.erb:1:in `_app_views_contacts_new_html_erb__3882743738388341323_36860840'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:46:51 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (3.6ms)
+  Rendered contacts/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_for(@contact) do |f| %>
+    2:  <% if @note.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
+    5: 
+  app/views/contacts/_form.html.erb:2:in `block in _app_views_contacts__form_html_erb__3302442664817515785_45078200'
+  app/views/contacts/_form.html.erb:1:in `_app_views_contacts__form_html_erb__3302442664817515785_45078200'
+  app/views/contacts/new.html.erb:1:in `_app_views_contacts_new_html_erb__3882743738388341323_44897800'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (9.7ms)
+  Rendered contacts/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:33 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:34 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:34 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:34 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:34 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (7.2ms)
+  Rendered contacts/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 31ms (Views: 20.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:47:38 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:31 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:50:32 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.8ms)
+  Rendered contacts/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Exists (0.2ms)[0m  SELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "objects", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-06 20:50:56.219303"], ["objects", 1], ["updated_at", "2014-08-06 20:50:56.219303"]]
+  [1m[35m (263.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts/13
+Completed 302 Found in 297ms (ActiveRecord: 265.4ms)
+
+
+Started GET "/contacts/13" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:50:56 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:51:01 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/contacts/13" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "id"=>"13"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.3ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 13]]
+  [1m[35m (218.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 233ms (ActiveRecord: 227.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:51:06 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:52:41 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (11.4ms)
+  Rendered contacts/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"1", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.7ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Exists (0.3ms)[0m  SELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (6.6ms)
+  Rendered contacts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 111ms (Views: 18.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:46 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"\"Sopot\"", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Exists (0.2ms)[0m  SELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (4.2ms)
+  Rendered contacts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 84ms (Views: 70.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:52:59 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:22 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 22:55:24 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.6ms)
+  Rendered contacts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (6.5ms)
+  Rendered contacts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 102ms (Views: 67.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:55:28 +0200
+  [1m[35mCity Load (0.5ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."name" = 'Siedlce' LIMIT 1
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" = 'Raszyn' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" = 'Raszyn' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-08-06 20:56:43.037245"], ["name", "Raszyn"], ["updated_at", "2014-08-06 20:56:43.037245"]]
+  [1m[36m (244.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)  [["city_id", 8], ["created_at", "2014-08-06 20:57:40.909172"], ["objects", 2], ["updated_at", "2014-08-06 20:57:40.909172"]]
+  [1m[36m (197.8ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (6.1ms)
+  Rendered contacts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 86ms (Views: 56.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 22:58:48 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:00:02 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCity Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (6.4ms)
+  Rendered contacts/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 86ms (Views: 55.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:03 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "cities"  WHERE "cities"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/_form.html.erb (6.8ms)
+  Rendered contacts/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 91ms (Views: 58.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:00:36 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (8.3ms)
+  Rendered contacts/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 72ms (Views: 66.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:01:02 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:01:11 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+Completed 400 Bad Request in 7ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: city):
+  app/controllers/contacts_controller.rb:58:in `city_params'
+  app/controllers/contacts_controller.rb:22:in `create'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:01:40 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+Completed 400 Bad Request in 5ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: city):
+  app/controllers/contacts_controller.rb:58:in `city_params'
+  app/controllers/contacts_controller.rb:22:in `create'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:02:58 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:02:59 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (2.7ms)
+  Rendered contacts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"sopot", "objects"=>""}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.5ms)[0m  SELECT  "cities".* FROM "cities"  LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered contacts/_form.html.erb (5.0ms)
+  Rendered contacts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 16.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:02 +0200
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:03:08 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"1", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)[0m  [["city_id", 1], ["created_at", "2014-08-06 21:03:08.500828"], ["objects", 2], ["updated_at", "2014-08-06 21:03:08.500828"]]
+  [1m[35m (512.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts/15
+Completed 302 Found in 523ms (ActiveRecord: 513.5ms)
+
+
+Started GET "/contacts/15" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered contacts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:09 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:03:14 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 82ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:31 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:03:41 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:42 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:03:48 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (5.4ms)
+  Rendered contacts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Siedlce", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)  [["city_id", 1], ["created_at", "2014-08-06 21:03:57.374868"], ["objects", 1], ["updated_at", "2014-08-06 21:03:57.374868"]]
+  [1m[36m (306.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/16
+Completed 302 Found in 318ms (ActiveRecord: 307.5ms)
+
+
+Started GET "/contacts/16" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered contacts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:03:57 +0200
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+Processing by RootController#index as HTML
+  [1m[36mCity Load (0.5ms)[0m  [1mSELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"  WHERE "contacts"."city_id" = ?  [["city_id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("contacts"."objects") AS sum_id FROM "contacts"  WHERE "contacts"."city_id" = ?[0m  [["city_id", 6]]
+  Rendered root/_form.html.erb (4.3ms)
+  Rendered root/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 43ms (Views: 33.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:04:10 +0200
+
+
+Started GET "/contacts/16" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered contacts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 11.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:42 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:05:44 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:05:45 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (5.2ms)
+  Rendered contacts/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)[0m  [["city_id", 1], ["created_at", "2014-08-06 21:05:50.071056"], ["objects", 1], ["updated_at", "2014-08-06 21:05:50.071056"]]
+  [1m[35m (238.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts/17
+Completed 302 Found in 263ms (ActiveRecord: 239.9ms)
+
+
+Started GET "/contacts/17" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered contacts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:05:50 +0200
+
+
+Started GET "/contacts/17" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 11.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:28 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:06:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:06:30 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (5.3ms)
+  Rendered contacts/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"2"}, "commit"=>"Create Contact"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)[0m  [["city_id", 1], ["created_at", "2014-08-06 21:06:38.346182"], ["objects", 2], ["updated_at", "2014-08-06 21:06:38.346182"]]
+  [1m[35m (441.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts/18
+Completed 302 Found in 471ms (ActiveRecord: 442.9ms)
+
+
+Started GET "/contacts/18" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:06:39 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:13:14 +0200
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 72ms (Views: 66.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:15 +0200
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2014-08-06 23:13:16 +0200
+Processing by ContactsController#new as HTML
+  Rendered contacts/_form.html.erb (4.1ms)
+  Rendered contacts/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-08-06 23:13:22 +0200
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xb17hmaCQdWENwy65IEY3PfuUaHH6mqDHycvwP5/piU=", "contact"=>{"city_id"=>"Sopot", "objects"=>"1"}, "commit"=>"Create Contact"}
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  "cities".* FROM "cities"  LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("city_id", "created_at", "objects", "updated_at") VALUES (?, ?, ?, ?)  [["city_id", 1], ["created_at", "2014-08-06 21:13:23.006319"], ["objects", 1], ["updated_at", "2014-08-06 21:13:23.006319"]]
+  [1m[36m (409.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts/19
+Completed 302 Found in 439ms (ActiveRecord: 411.4ms)
+
+
+Started GET "/contacts/19" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered contacts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cities.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/root.css?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/cities.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/root.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 23:13:23 +0200
+
+
+Started GET "/contacts" for 127.0.0.1 at 2014-08-06 23:13:27 +0200
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/root" for 127.0.0.1 at 2014-08-06 23:13:35 +0200
+Processing by RootController#index as HTML
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities" INNER JOIN "contacts" ON "contacts"."city_id" = "cities"."id" GROUP BY "contacts"."city_id"  ORDER BY COUNT("contacts"."city_id")
+Completed 500 Internal Server Error in 52ms
+
+NoMethodError (undefined method `paginate' for #<Array:0x00000003553cc0>):
+  app/controllers/root_controller.rb:11:in `index'
+
+
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/gosia/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
