@@ -1,19 +1,11 @@
-  <%= form_tag do %>
-
-  <div class="field">
-    <%= label :city, :name %><br>
-    <%= text_field :city, :name %>
-  </div>
-
-  <div class="field">
-    <%= label :contact, :objects %><br>
-    <%= text_field :contact, :objects %>
-  </div>
+ <%= form_for(@city) do |f| %>
   
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
   <div class="actions">
-    <%= submit_tag "stwórz" %>
-   
-  
+    <%= f.submit %>
+    <% end %>
   </div>
-  
-  <% end %>

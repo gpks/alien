@@ -1,4 +1,5 @@
 class CitiesController < ApplicationController
+  before_filter :authorize
   before_action :set_city, only: [:show, :edit, :update, :destroy]
   def new
     @city = City.new

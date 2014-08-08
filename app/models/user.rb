@@ -1,8 +1,7 @@
 class User < ActiveRecord::Base
-validates :name, presence: true
-validates :password, presence: true
-validates :password, length: { in: 2..6}
-validates :email, format: {with: /@/ }
-validates :admin, presence: true
-
+  has_secure_password
+  validates :name, presence: true
+  validates :name, uniqueness: true
+  validates :email, format: {with: /@/ }
+  validates :email, uniqueness: true
 end

@@ -1,4 +1,4 @@
-class RootController < ApplicationController
+class MainController < ApplicationController
   def index
     @cities = City.all
     #@cont = Contact.all

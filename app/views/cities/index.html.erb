@@ -12,17 +12,17 @@
   </thead>
 
   <tbody>
-    <% @cities.each do |ticket| %>
+    <% @cities.each do |city| %>
       <tr>
-        <td><%= ticket.id %></td>
-        <td><%= ticket.name %></td>
-       <td><%= link_to 'Edit', edit_city_path(ticket.id)%> <td><%= link_to 'show', ticket %> <td><%= link_to 'destroy', ticket, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
+        <td><%= city.id %></td>
+        <td><%= city.name %></td>
+       <td><%= link_to 'Edit', edit_city_path(city.id)%> <td><%= link_to 'show', city %> <td><%= link_to 'destroy', city, :method => :delete, data: {confirm: "Sure?"} %></td></td> 
  
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Ticket', new_city_path %>
+<%= link_to 'New city', new_city_path %>
 
 

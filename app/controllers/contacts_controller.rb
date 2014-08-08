@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  before_filter :authorize
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   def new
     @contact = Contact.new
